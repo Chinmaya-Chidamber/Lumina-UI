@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-white;
+}
+
+/* ===== Base input styles ===== */
+.input-base {
+  @apply w-full rounded-lg outline-none transition border px-3 py-2
+         text-gray-900 dark:text-white
+         placeholder-gray-500 dark:placeholder-gray-300;
+}
+
+/* ===== Variants ===== */
+.input-filled {
+  @apply bg-gray-100 dark:bg-gray-800
+         border-gray-200 dark:border-gray-700
+         focus:bg-white dark:focus:bg-gray-900
+         focus:border-gray-400 dark:focus:border-gray-500;
+}
+
+.input-outlined {
+  @apply bg-white dark:bg-gray-900
+         border-gray-300 dark:border-gray-600
+         focus:border-gray-500 dark:focus:border-gray-400;
+}
+
+.input-ghost {
+  @apply bg-transparent border-transparent
+         text-gray-900 dark:text-white
+         placeholder-gray-500 dark:placeholder-gray-300
+         focus:border-gray-400 dark:focus:border-gray-300;
+}
+
+/* ===== Sizes ===== */
+.size-sm { @apply text-sm py-1.5; }
+.size-md { @apply text-base py-2; }
+.size-lg { @apply text-lg py-3; }
+
+
+.input-base:disabled {
+  @apply bg-gray-200 dark:bg-gray-700
+         text-gray-500 dark:text-gray-400
+         cursor-not-allowed;
+}
