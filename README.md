@@ -78,13 +78,13 @@ npm test
 npm run build-storybook
 ```
 
-##🌐 Deployment
+## 🌐 Deployment
 The Storybook build (storybook-static/) can be deployed on:
 - Vercel (recommended)
 - GitHub Pages
 - Netlify
 
-#👤 Author
+## 👤 Author
 
 Name: CHINMAYA CHIDAMBER SAHOO
 GitHub: @Chinmaya-Chidamber
