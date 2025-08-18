@@ -1,62 +1,90 @@
-# React Component Development Assignment
+# Lumina UI
 
-Two reusable components built with React, TypeScript, Tailwind, and Storybook.
 
-- **InputField**: flexible input with variants, sizes, states, clear button, password toggle.
-- **DataTable**: tabular data with sorting, row selection, loading and empty states.
+**Lumina UI** is a mini React component library built with **React**, **TypeScript**, **Tailwind CSS**, and **Storybook**.  
+It showcases an **InputField** and a **DataTable** component with support for light and dark themes, accessibility, and testing.
 
-## Tech
-- React + TypeScript + Vite
-- Tailwind CSS
-- Storybook 8 (react-vite)
-- Vitest + Testing Library
+---
 
-## Getting Started
+## 🚀 Tech Stack
+- **React** (with TypeScript)
+- **Tailwind CSS** (utility-first styling)
+- **Storybook** (component documentation & preview)
+- **Jest + React Testing Library** (unit tests)
+- **Vercel / GitHub Pages** (deployment)
 
+---
+
+## 📂 Project Structure
+src/
+├─ components/
+│ ├─ InputField.tsx
+│ ├─ DataTable.tsx
+│ └─ ...
+| ├─ __tests__/ (Jest + RTL tests)
+├─ stories/ (Storybook stories)
+
+└─ index.css (global styles with theme variables)
+
+
+---
+
+## ✨ Features
+- **InputField**
+  - Variants: Outlined, Filled, Ghost
+  - Sizes: Small, Medium, Large
+  - States: Disabled, Invalid, Loading
+  - Optional Clear button & Password toggle
+  - Accessible with labels, helper text, and error messages
+
+- **DataTable**
+  - Sortable column headers
+  - Row selection with checkboxes
+  - Light & Dark mode support
+  - Empty state & loading state
+  - Accessible with roles & labels
+
+- **Theme Support**
+  - Light and Dark mode using CSS variables
+  - Customizable colors (`index.css`)
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the repository
 ```bash
-# 1) Install deps
+git clone https://github.com/<your-username>/lumina-ui.git
+cd lumina-ui
+```
+### 2. Install dependencies
+```bash
 npm install
+```
 
-# 2) Run the app
-npm run dev
-
-# 3) Storybook
+### 3. Run Storybook
+```bash
 npm run storybook
+```
+`Storybook will start at http://localhost:6006.`
 
-# 4) Tests
+### 4. Run tests
+```bash
 npm test
 ```
 
-## Folder Structure
-
-```
-src/
-  components/
-    DataTable.tsx
-    InputField.tsx
-    __tests__/
-      DataTable.test.tsx
-      InputField.test.tsx
-  stories/
-    DataTable.stories.tsx
-    InputField.stories.tsx
-  App.tsx
-  index.css
-  main.tsx
-  setupTests.ts
-.storybook/
-  main.ts
-  preview.ts
+### 5. Build Storybook (for deployment)
+```bash
+npm run build-storybook
 ```
 
-## Accessibility
-- Input uses `aria-invalid`, `aria-busy`, and associates label with input via `htmlFor`.
-- Table headers expose `aria-sort`. Rows use `aria-selected` when selected.
+##🌐 Deployment
+The Storybook build (storybook-static/) can be deployed on:
+- Vercel (recommended)
+- GitHub Pages
+- Netlify
 
-## Deploy Storybook
-- Chromatic or Vercel will work. Build with `npm run build-storybook`.
-- Deploy the generated `storybook-static` folder.
+#👤 Author
 
-## Notes
-- The DataTable expects rows to have an `id` for selection. If missing, it will fallback to index keys.
-- Adjust Tailwind design tokens in `tailwind.config.ts` as needed.
+Name: CHINMAYA CHIDAMBER SAHOO
+GitHub: @Chinmaya-Chidamber
