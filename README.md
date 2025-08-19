@@ -83,8 +83,11 @@ The Storybook build (storybook-static/) can be deployed on:
 - Vercel (recommended)
 - GitHub Pages
 - Netlify
+- Chromatic
+
+## 🌐 Live Demo
+Check out the live Storybook here: [Lumina UI](https://lumina-ui-ccs.vercel.app)
 
 ## 👤 Author
-
 Name: CHINMAYA CHIDAMBER SAHOO
 GitHub: @Chinmaya-Chidamber
