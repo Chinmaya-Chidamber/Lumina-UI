@@ -1,0 +1,27 @@
+# dependencies
+node_modules/
+
+# storybook build output
+storybook-static/
+
+# other build outputs (if you add any later)
+dist/
+build/
+
+# tests
+coverage/
+
+# env & system
+.env
+.DS_Store
+Thumbs.db
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# editor
+.vscode/
+.idea/
